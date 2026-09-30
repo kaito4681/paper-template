@@ -1,0 +1,35 @@
+{
+  "[latex]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "efoerster.texlab"
+  },
+  "[bibtex]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "efoerster.texlab"
+  },
+
+  "texlab.build.executable": "make",
+  "texlab.build.args": [],
+  "texlab.build.onSave": true,
+  "texlab.build.auxDirectory": "out",
+  "texlab.build.logDirectory": "out",
+  "texlab.build.pdfDirectory": "out",
+
+  "texlab.chktex.onOpenAndSave": true,
+  "texlab.chktex.onEdit": false,
+
+  "texlab.diagnostics.ignoredPatterns": [
+    "^Package caption Warning: Unknown document class",
+    "^LaTeX Warning: Empty `thebibliography' environment",
+    "^LaTeX Warning: There were undefined references",
+    "^LaTeX Warning: (Reference|Citation) .* undefined on input line"
+  ],
+
+  "workbench.editorAssociations": {
+    "*.pdf": "pdf.view"
+  },
+  "editor.wordWrap": "on"
+}
