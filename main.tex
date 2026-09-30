@@ -1,0 +1,99 @@
+\documentclass[10pt]{jsarticle}
+
+% ===== ここを書き換える =====
+\newcommand{\papertitle}{研究題目を入力}
+\newcommand{\studentid}{学籍番号を入力}
+\newcommand{\studentname}{氏名を入力}
+
+%DON'T TOUCH THESE COMMANDS%
+\setlength{\paperwidth}{210mm}
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-20mm}
+\addtolength{\textwidth}{-20mm}
+\setlength{\oddsidemargin}{-1in}
+\addtolength{\oddsidemargin}{20mm}
+\setlength{\paperheight}{287mm}
+\setlength{\textheight}{\paperheight}
+\addtolength{\textheight}{-40mm}
+\setlength{\topmargin}{-5mm}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\columnsep}{10mm}
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{\z@}%
+   {.5\Cvs\@plus.5\Cvs\@minus.2\Cvs}%
+   {.5\Cvs\@plus.1\Cvs}%
+   {\reset@font\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
+   {.5\Cvs\@plus.3\Cvs\@minus.1\Cvs}%
+   {.5\Cvs\@plus.3\Cvs}%
+   {\reset@font\normalsize\bfseries}}
+\makeatother
+\pagestyle{empty}
+
+% ===== パッケージ =====
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage[hyphens]{url}
+\usepackage{bm}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{mathtools}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[noabbrev]{cleveref}
+\usepackage{setspace}
+\usepackage{stfloats}
+\usepackage[perpage,bottom]{footmisc}
+\usepackage{dblfnote}
+
+\setlength{\textfloatsep}{12pt}
+\setlength{\floatsep}{12pt}
+\setlength{\intextsep}{12pt}
+
+\crefname{figure}{図}{図}
+\Crefname{figure}{図}{図}
+\crefname{table}{表}{表}
+\Crefname{table}{表}{表}
+\crefname{equation}{式}{式}
+\Crefname{equation}{式}{式}
+
+\begin{document}
+\setstretch{0.90}
+
+\twocolumn[%
+	\begin{center}
+		{\Large\bfseries \papertitle\par}
+		\vspace{4mm}
+		{\large \studentid\qquad \studentname\par}
+		\vspace{6mm}
+	\end{center}
+]
+
+\section{はじめに}
+研究の背景，目的，本稿の概要を記入する．
+
+\section{関連研究}
+関連する研究と，本研究との関係を記入する．
+
+\section{提案手法}
+提案する手法や研究の進め方を記入する．
+
+\section{実験・評価}
+実験条件，結果，考察を記入する．
+
+\section{おわりに}
+結論と今後の課題を記入する．
+
+% 参考文献
+\renewcommand{\refname}{参考文献}
+\bibliographystyle{unsrt}
+\bibliography{main}
+
+\end{document}
